@@ -1,5 +1,10 @@
 -- | Some utility functions for using hxt picklers.
 module Text.Xml.Pickle
+  ( toXML
+  , fromXML
+  , maybeFromXML
+  , eitherFromXML
+  ) where
 
 import Control.Monad.Identity
 import Control.Category
