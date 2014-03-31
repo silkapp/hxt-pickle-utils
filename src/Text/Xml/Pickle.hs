@@ -17,9 +17,9 @@ maybeFromXML = fromXMLM
 eitherFromXML :: XmlPickler a => String -> Either String a
 eitherFromXML text =
   case runLA (removeAllWhiteSpace . xread) text of
-    []    -> Left "Failed to parse XML in fromXMLM."
+    []    -> Left "Failed to parse XML in eitherFromXML."
     [x]   -> unpickleDoc' xpickle x
-    (_:_) -> Left "Multiple parses in fromXMLM."
+    (_:_) -> Left "Multiple parses in eitherFromXML."
 
 fromXMLM :: (Monad m, XmlPickler a) => String -> m a
 fromXMLM text = case runLA (removeAllWhiteSpace . xread) text of
