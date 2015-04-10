@@ -1,5 +1,5 @@
 name:                hxt-pickle-utils
-version:             0.1.0.2
+version:             0.1.0.3
 synopsis:            Utility functions for using HXT picklers.
 description:         Utility functions for using HXT picklers.
 homepage:            https://github.com/silkapp/hxt-pickle-utils
