@@ -27,6 +27,6 @@ library
   exposed-modules:   Text.Xml.Pickle
                    , Text.Xml.Pickle.Any
   build-depends:
-      base >= 4.5 && < 4.11
+      base >= 4.5 && < 4.12
     , hxt  >= 9.2 && < 9.4
     , mtl  >= 2.0 && < 2.3
